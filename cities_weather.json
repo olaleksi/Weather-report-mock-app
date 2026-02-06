@@ -1,84 +1,182 @@
 {
-    "cities": [
-      {"id": 1,
-        "name": "Lagos",
-        "country": "Nigeria",
-        "temperature": 28,
-        "condition": "Partly Cloudy",
-        "humidity": 78,
-        "wind_speed": 12
-      },
-      {"id": 2,
-        "name": "London",
-        "country": "United Kingdom",
-        "temperature": 15,
-        "condition": "Rainy",
-        "humidity": 85,
-        "wind_speed": 18
-      },
-      {"id": 3,
-        "name": "Tokyo",
-        "country": "Japan",
-        "temperature": 22,
-        "condition": "Sunny",
-        "humidity": 65,
-        "wind_speed": 10
-      },
-      {"id": 4,
-        "name": "New York",
-        "country": "United States",
-        "temperature": 20,
-        "condition": "Clear",
-        "humidity": 60,
-        "wind_speed": 15
-      },
-      {"id": 5,
-        "name": "Paris",
-        "country": "France",
-        "temperature": 18,
-        "condition": "Cloudy",
-        "humidity": 75,
-        "wind_speed": 14
-      },
-      {"id": 6,
-        "name": "Sydney",
-        "country": "Australia",
-        "temperature": 25,
-        "condition": "Sunny",
-        "humidity": 55,
-        "wind_speed": 20
-      },
-      {"id": 7,
-        "name": "Dubai",
-        "country": "United Arab Emirates",
-        "temperature": 35,
-        "condition": "Hot",
-        "humidity": 40,
-        "wind_speed": 8
-      },
-      {"id": 8,
-        "name": "Mumbai",
-        "country": "India",
-        "temperature": 32,
-        "condition": "Humid",
-        "humidity": 80,
-        "wind_speed": 11
-      },
-      {"id": 9,
-        "name": "Cairo",
-        "country": "Egypt",
-        "temperature": 30,
-        "condition": "Sunny",
-        "humidity": 45,
-        "wind_speed": 16
-      },
-      {"id": 10,
-        "name": "São Paulo",
-        "country": "Brazil",
-        "temperature": 26,
-        "condition": "Partly Cloudy",
-        "humidity": 70,
-        "wind_speed": 13
-      }
-    ]
+  "lagos": {
+    "city": "Lagos",
+    "country": "Nigeria",
+    "temperature": "28",
+    "condition": "Partly cloudy",
+    "humidity": 82,
+    "windSpeed": 14,
+    "description": "Warm and humid coastal weather with thick moisture in the air and periods of cloud cover throughout the day."
+  },
+  "tokyo": {
+    "city": "Tokyo",
+    "country": "Japan",
+    "temperature": "2",
+    "condition": "Cloudy",
+    "humidity": 55,
+    "windSpeed": 18,
+    "description": "Cold winter conditions with dense cloud layers, creating a chilly and muted daytime atmosphere."
+  },
+  "sydney": {
+    "city": "Sydney",
+    "country": "Australia",
+    "temperature": "21",
+    "condition": "Cloudy",
+    "humidity": 60,
+    "windSpeed": 22,
+    "description": "Mild temperatures with overcast skies, offering comfortable weather and low chances of extreme heat."
+  },
+  "cairo": {
+    "city": "Cairo",
+    "country": "Egypt",
+    "temperature": "20",
+    "condition": "Clear",
+    "humidity": 35,
+    "windSpeed": 12,
+    "description": "Dry and comfortable desert climate with clear skies and plenty of sunshine during the day."
+  },
+  "istanbul": {
+    "city": "Istanbul",
+    "country": "Turkey",
+    "temperature": "13",
+    "condition": "Cloudy",
+    "humidity": 65,
+    "windSpeed": 16,
+    "description": "Cool temperatures with light cloud cover, giving the city a calm and slightly chilly feel."
+  },
+  "rio": {
+    "city": "Rio",
+    "country": "Brazil",
+    "temperature": "24",
+    "condition": "Rain showers",
+    "humidity": 78,
+    "windSpeed": 20,
+    "description": "Warm tropical weather with scattered rain showers and noticeable humidity throughout the day."
+  },
+  "chicago": {
+    "city": "Chicago",
+    "country": "USA",
+    "temperature": "-2",
+    "condition": "Clear",
+    "humidity": 50,
+    "windSpeed": 28,
+    "description": "Very cold winter conditions with clear skies and sharp, icy air typical of the season."
+  },
+  "dubai": {
+    "city": "Dubai",
+    "country": "UAE",
+    "temperature": "37",
+    "condition": "Clear",
+    "humidity": 40,
+    "windSpeed": 15,
+    "description": "Extremely hot desert weather with intense sunshine and dry heat dominating most of the day."
+  },
+  "mumbai": {
+    "city": "Mumbai",
+    "country": "India",
+    "temperature": "24",
+    "condition": "Cloudy",
+    "humidity": 75,
+    "windSpeed": 17,
+    "description": "Warm and humid conditions with thick clouds, creating a heavy and moisture-rich atmosphere."
+  },
+  "london": {
+    "city": "London",
+    "country": "UK",
+    "temperature": "8",
+    "condition": "Rain",
+    "humidity": 85,
+    "windSpeed": 21,
+    "description": "Cold and wet weather with steady rainfall and damp air persisting through most of the day."
+  },
+  "beijing": {
+    "city": "Beijing",
+    "country": "China",
+    "temperature": "-8",
+    "condition": "Cloudy",
+    "humidity": 45,
+    "windSpeed": 19,
+    "description": "Freezing winter temperatures with persistent cloud cover and dry, cold air."
+  },
+  "cordoba": {
+    "city": "Cordoba",
+    "country": "Argentina",
+    "temperature": "27",
+    "condition": "Sunny",
+    "humidity": 42,
+    "windSpeed": 13,
+    "description": "Hot and sunny weather with dry air and strong sunlight typical of inland summer conditions."
+  },
+  "paris": {
+    "city": "Paris",
+    "country": "France",
+    "temperature": "10",
+    "condition": "Showers",
+    "humidity": 70,
+    "windSpeed": 18,
+    "description": "Cool weather with intermittent rain showers and cloudy skies moving across the city."
+  },
+  "johannesburg": {
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "temperature": "18",
+    "condition": "Clear",
+    "humidity": 48,
+    "windSpeed": 14,
+    "description": "Pleasant and mild weather with clear skies and comfortable outdoor conditions."
+  },
+  "seoul": {
+    "city": "Seoul",
+    "country": "South Korea",
+    "temperature": "-9",
+    "condition": "Cloudy",
+    "humidity": 50,
+    "windSpeed": 23,
+    "description": "Very cold winter weather with heavy cloud cover and biting temperatures throughout the day."
+  },
+  "monterrey": {
+    "city": "Monterrey",
+    "country": "Mexico",
+    "temperature": "16",
+    "condition": "Clear",
+    "humidity": 45,
+    "windSpeed": 12,
+    "description": "Cool and dry conditions with clear skies, making the weather calm and comfortable."
+  },
+  "singapore": {
+    "city": "Singapore",
+    "country": "Singapore",
+    "temperature": "26",
+    "condition": "Thunderstorms",
+    "humidity": 88,
+    "windSpeed": 10,
+    "description": "Warm and very humid tropical climate with frequent thunderstorms and heavy rainfall."
+  },
+  "berlin": {
+    "city": "Berlin",
+    "country": "Germany",
+    "temperature": "-1",
+    "condition": "Cloudy",
+    "humidity": 68,
+    "windSpeed": 17,
+    "description": "Cold winter day with overcast skies and a persistent chill in the air."
+  },
+  "vancouver": {
+    "city": "Vancouver",
+    "country": "Canada",
+    "temperature": "6",
+    "condition": "Cloudy",
+    "humidity": 72,
+    "windSpeed": 20,
+    "description": "Cool coastal weather with thick clouds, light wind, and a chance of drizzle."
+  },
+  "durban": {
+    "city": "Durban",
+    "country": "South Africa",
+    "temperature": "23",
+    "condition": "Sunny",
+    "humidity": 70,
+    "windSpeed": 19,
+    "description": "Warm coastal conditions with bright sunshine, sea breezes, and moderate humidity."
   }
+}
