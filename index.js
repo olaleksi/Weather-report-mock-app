@@ -1,9 +1,11 @@
 // Imports
-import fs from "node:fs";
+import fs from "node:fs/promises";
 
 // Reading the cities_weather.json file
-fs.readFile("cities_weather.json", "utf-8", (err, data) => {
-    if (err) throw new Error(err);
+const citiesWeather = JSON.parse(await fs.readFile("cities_weather.json", "utf-8"));
+console.log(citiesWeather);
 
-    const citiesWeather = JSON.parse(data);
-});
+
+
+
+
