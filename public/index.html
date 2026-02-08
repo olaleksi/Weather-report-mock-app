@@ -3,74 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>WEATHER APP</title>
 </head>
-<style>
-    .weather-card {
-        background-color: #f0f4f8;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid black;
-        border-radius: 8px;
-        width: 500px;
-        padding: 15px;
-        margin: 0 auto;
-    }
 
-    .box {
-        display: inline-block;
-        background-color: #ffffff;
-        border-radius: 6px;
-        padding: 6px 12px;
-        margin: 6px 0;
-        font-size: 14px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .details {
-        display: flex;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    p {
-        font-size: medium;
-        font-weight: bold;
-    }
-
-    div {
-        text-align: center;
-    }
-</style>
 <body>
-    <div class="weather-card">
-    <div><h1>Weather report in {{city}}, {{country}}</h1></div>
 
-    <div class="details">
-      <div class="box">
-        <p>Temperature</p>
-        {{temperature}}
-      </div>
+  <h1>Weather Report</h1>
+  <form action="/submit" method="POST">
+    <label for="city">Enter City Name:</label>
+    <input type="text" name="city" required>
+    <input type="submit" value="Weather Report">
+</form>
 
-      <div class="box">
-        <p>Humidity</p>
-        {{humidity}}
-      </div>
-      
-      <div class="box">
-        <p>Wind Speed</p>
-        {{windspeed}}
-      </div>
-    </div>
-
-    <div class="box">
-      {{condition}}
-    </div>
-
-    <div class="box">
-      {{description}}
-    </div>
-  </div>
 </body>
 </html>

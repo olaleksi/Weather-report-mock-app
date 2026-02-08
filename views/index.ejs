@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WEATHER APP</title>
+</head>
+
+<% if (locals.capitalizedCity) { %>    
+
+<div class="weather-card">
+    <div><h1>Weather report in <%= capitalizedCity %>, <%=country%> </h1></div>
+
+    <div class="details">
+      <div class="box">
+        <p>Temperature</p>
+        <%= temperature %>
+      </div>
+
+      <div class="box">
+        <p>Humidity</p>
+        <%= humidity %>
+      </div>
+      
+      <div class="box">
+        <p>Wind Speed</p>
+        <%= windSpeed %>
+      </div>
+    </div>
+
+    <div class="box">
+      <%= condition %>
+    </div>
+
+    <div class="box">
+      <%= description %>
+    </div>
+  </div>
+  <% } else { %>
+    <div class="weather-card">
+    <h1><%= error  %></h1>
+    </div>
+  <% } %>
