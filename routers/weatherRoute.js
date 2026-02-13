@@ -12,9 +12,9 @@ import fs from "node:fs/promises";
 const router = express.Router();
 
 
-// Exporting paths
-export const __filename = fileURLToPath(import.meta.url);
-export const __dirname = path.dirname(__filename);
+
+ const __filename = fileURLToPath(import.meta.url);
+ const __dirname = path.dirname(__filename);
 
 
 // Middlewares
