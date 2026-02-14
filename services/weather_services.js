@@ -10,7 +10,7 @@ const citiesWeather = JSON.parse(await fs.readFile("cities_weather.json", "utf-8
 
 export function getWeatherByCity(city) {
     if(!city || safeTrim(city) === '') {
-        return res.render("index.ejs", {error : `Please enter a city`})
+        return {error : `Please enter a city`};
       }
     
       // Triming the submitted values to get rid of empty spaces before or after the input and normalizing to lowercase
