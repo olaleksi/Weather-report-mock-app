@@ -163,6 +163,10 @@ For a complete list, see [cities_weather.json](cities_weather.json).
 
 ISC
 
+## Changelog
+
+- **2026-02-14**: Refactored code base for maintainability and updated project structure.
+
 ## Notes
 
 - This is a **mock application** using pre-configured weather data
