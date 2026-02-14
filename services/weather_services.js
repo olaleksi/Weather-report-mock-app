@@ -27,7 +27,7 @@ export function getWeatherByCity(city) {
       }
     
       // Handling a known city
-      res.render('index.ejs', {
+      return{
         capitalizedCity:capitalize(trimmedCity),
         country: cityWeather.country,
         temperature: cityWeather.temperature,
@@ -35,5 +35,5 @@ export function getWeatherByCity(city) {
         windSpeed: cityWeather.windSpeed,
         humidity: cityWeather.humidity,
         description: cityWeather.description
-      }); 
+      }; 
     };
