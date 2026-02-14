@@ -9,6 +9,7 @@ A simple Express.js-based web application for retrieving weather information for
 - **Error Handling**: Validates user input and provides helpful error messages
 - **Multiple Cities**: Pre-loaded weather data for major cities worldwide
 - **Weather Details**: Displays temperature, weather condition, humidity, wind speed, and weather description
+- **Modular Architecture**: Refactored into routers, controllers, and services for maintainability
 
 ## Tech Stack
 
@@ -97,20 +98,28 @@ curl "http://localhost:3000/weather?city=lagos"
 
 ## Project Structure
 
+The application has been refactored into a modular layout with clear separation of concerns.
+
 ```
 Weather-report-mock-app/
-├── index.js                 # Main Express server and routes
-├── package.json            # Project dependencies
+├── index.js                 # Main entry point, sets up Express and mounts routes
+├── package.json            # Project dependencies and scripts
 ├── cities_weather.json     # Weather data for all cities
-├── README.md              # This file
+├── routers/                # Route definitions
+│   └── weatherRoute.js     # Express router for weather endpoints
+├── controllers/            # Request handlers
+│   └── weather_controllers.js
+├── services/               # Business logic and data access
+│   └── weather_services.js
+├── utils/                  # Small helper functions
+│   ├── capitalize.js      # Utility to capitalize city names
+│   └── trim.js            # Utility to trim whitespace
+├── views/                  # EJS templates
+│   └── index.ejs          # Template for weather display
 ├── public/
 │   ├── index.html         # Form and weather display UI
 │   └── styles.css         # Styling
-├── utils/
-│   ├── capitalize.js      # Utility to capitalize city names
-│   └── trim.js            # Utility to trim whitespace
-└── views/
-    └── index.ejs          # EJS template for weather display
+└── README.md              # This file
 ```
 
 ## Supported Cities
@@ -162,6 +171,10 @@ For a complete list, see [cities_weather.json](cities_weather.json).
 ## License
 
 ISC
+
+## Changelog
+
+- **2026-02-14**: Refactored code base into routers/controllers/services and updated project structure.
 
 ## Notes
 
